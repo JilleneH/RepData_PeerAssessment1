@@ -98,6 +98,8 @@ length(complete.cases(activity)[complete.cases(activity)==TRUE])
 
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
+*I will create a new variable that represents the mean number of steps for an interval. For any observations that is incomplete, I will put the cases the steps variable is filled in with the mean number of steps for the same interval of the corresponding observations. If an observation does not have a complete case, this is due to the missing number of steps.  The steps variable is the only variable with 'NA's.*
+
 3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
 
